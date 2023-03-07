@@ -1,43 +1,43 @@
 /*
 * File: app.js
-* Author: Erős István
-* Copyright: 2023, Erős István
+* Author: Kocsis Viola
+* Copyright: 2023, Kocsis Viola
 * Group: Szoft I-2 E
-* Date: 2023-02-23
-* Github: https://github.com/erosistvan/
+* Date: 2023-03-07
+* Github: https://github.com/Aloive76/Aloive76
 * Licenc: GNU GPL
 */
 
 const tbody = document.querySelector('#tbody');
-var empList = [
-    { id: 1, name: 'Per Lajos', city: 'Szeged', salary: 345 },
-    { id: 2, name: 'Para Béla', city: 'Szeged', salary: 345 },
-    { id: 3, name: 'Erős Imre', city: 'Szolnok', salary: 325 },
-    { id: 4, name: 'Tér Emese', city: 'Szeged', salary: 385 },
-    { id: 5, name: 'Ken Irén', city: 'Miskolc', salary: 375 },
-    { id: 6, name: 'Csoma Ferenc', city: 'Szeged', salary: 395 }
+var gepidaList = [
+    { name: 'cassis', wheel: 28, use: 'offroad', price: 557900 },
+    { name: 'Alboin 900', wheel: 28, use: 'trekking', price: 519900 },
+    { name: 'Asgard', wheel: 29, use: 'technikás utak', price: 519900 },
+    { name: 'Ruga', wheel: 29, use: 'hegyi', price: 372900 },
+    { name: 'Reptila', wheel: 28, use: 'városi', price: 308900 },
+    { name: 'Sirmium', wheel: 29, use: 'hegyi', price: 264900 }
 ];
 
 function createTable() {
-    empList.forEach((emp) => {
-        console.log(emp.name)   
+    gepidaList.forEach((gepida) => {
+        console.log(gepida.name)   
         let tr = document.createElement('tr');
 
-        let tdId = document.createElement('td');
-        let tdName = document.createElement('td');
-        let tdCity = document.createElement('td');
-        let tdSalary = document.createElement('td');
+        let tdname = document.createElement('td');
+        let tdwheel = document.createElement('td');
+        let tduse = document.createElement('td');
+        let tdprice = document.createElement('td');
 
-        tdId.textContent = emp.id;
-        tdName.textContent = emp.name;
-        tdCity.textContent = emp.city;
-        tdSalary.textContent = emp.salary;
+        tdname.textContent = gepida.name;
+        tdwheel.textContent = gepida.wheel;
+        tduse.textContent = gepida.use;
+        tdprice.textContent = gepida.price;
 
         tbody.append(tr);
-        tr.append(tdId);
-        tr.append(tdName);
-        tr.append(tdCity);
-        tr.append(tdSalary);
+        tr.append(tdname);
+        tr.append(tdwheel);
+        tr.append(tduse);
+        tr.append(tdprice);
     });
 };
 createTable();

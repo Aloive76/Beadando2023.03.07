@@ -1,10 +1,10 @@
 <!--
 File: index.html
-Author: Erős István
-Copyright: 2023, Erős István
+Author: Kocsis Viola
+Copyright: 2023, Kocsis Viola
 Group: Szoft I-2 E
-Date: 2023-02-23
-Github: https://github.com/erosistvan/
+Date: 2023-03-07
+Github: https://github.com/Aloive76/Aloive76
 Licenc: GNU GPL
 -->
 
@@ -13,22 +13,24 @@ Licenc: GNU GPL
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sablon</title>
+    <title>Gepida</title>
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
-        <h1>Dolgozók</h1>
-
+        <h1>Táblázat</h1>
+        <div id="idezet">
+            "Tanulj tinó, ökör lesz belőled"
+        </div>
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th>Id</th>
                     <th>Név</th>
-                    <th>Település</th>
-                    <th>Fizetés</th>
+                    <th>Kerék</th>
+                    <th>Használat</th>
+                    <th>Ár</th>
                 </tr>
             </thead>
             <tbody id="tbody"></tbody>
@@ -37,7 +39,7 @@ Licenc: GNU GPL
     </div>
 
     <div id="about">
-        Nagy János, Szoft I-2 E, 2023-02-23
+        Kocsis Viola, Szoft I-2 E, 2023-03-07
     </div>
 
     <script src="app.js"></script>
